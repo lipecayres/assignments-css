@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600;700;800;900&display=swap');
+
+
+/* Nav bar */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav ul li {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+button{
+    
+}
+/* paragraph space */
+p {
+    padding: 2px;
+    margin: 0;
+}
+
+
+
+/* Title */
+.title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+}
+
+.title h1{
+    color: aqua;
+}
+
+.title h2 {
+    font-size: 12px;
+}
+
+
+/* Nav bar Button > Play Song */ 
+
+.btn{
+    cursor: pointer;
+    background: lightblue;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:hover{
+    opacity: 80%;
+}
+
+/* Lyrics properties   */
+main {
+    margin-top: 1rem;
+    text-align: center;
+}
+
