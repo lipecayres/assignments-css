@@ -2,11 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600;700;800;900&display=swap');
 
 
+:root{
+    --primary-color: #c154c1;
+    --secondary-color: magenta ;
+    --backgroung-color: #ffe6ee;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--backgroung-color);
+}
+
 /* Nav bar */
 
-*{
-    font-family: 'Roboto', sans-serif;
-}
 nav {
     display: flex;
     justify-content: flex-end;
@@ -26,43 +35,31 @@ nav ul li {
     font-size: 30px;
 }
 
-button{
-    
-}
-/* paragraph space */
-p {
-    padding: 2px;
-    margin: 0;
+nav button {
+    margin: 5px;
 }
 
-
-
-/* Title */
-.title {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    line-height: 10px;
+#btn1{
+    background-color: #FF0000;
 }
 
-.title h1{
-    color: aqua;
+#btn2{
+    background-color: #1db954;
 }
-
-.title h2 {
-    font-size: 12px;
-}
-
 
 /* Nav bar Button > Play Song */ 
 
 .btn{
     cursor: pointer;
-    background: lightblue;
     padding: 15px;
     font-size: 16px;
     border: 0;
     border-radius: 5px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn:focus{
@@ -77,9 +74,44 @@ p {
     opacity: 80%;
 }
 
+/* paragraph space */
+p {
+    padding: 2px;
+    margin: 0;
+}
+
+
+/* Title */
+.title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+}
+
+.title h1{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.title h2 {
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+
 /* Lyrics properties   */
 main {
     margin-top: 1rem;
     text-align: center;
 }
 
+
+footer{
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: .8rem;
+}
