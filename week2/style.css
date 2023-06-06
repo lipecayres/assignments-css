@@ -3,15 +3,14 @@
 
 
 :root{
-    --primary-color: #c154c1;
-    --secondary-color: magenta ;
-    --backgroung-color: #ffe6ee;
+    --primary-color: lightcoral;
+    --secondary-color: gray ;
 }
 
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--backgroung-color);
+    background-color: #f5f5dc;
 }
 
 /* Nav bar */
@@ -39,13 +38,7 @@ nav button {
     margin: 5px;
 }
 
-#btn1{
-    background-color: #FF0000;
-}
 
-#btn2{
-    background-color: #1db954;
-}
 
 /* Nav bar Button > Play Song */ 
 
@@ -74,11 +67,15 @@ nav button {
     opacity: 80%;
 }
 
-/* paragraph space */
-p {
-    padding: 2px;
-    margin: 0;
+#btn1{
+    background-color: #FF0000;
 }
+
+#btn2{
+    background-color: #1db954;
+}
+
+
 
 
 /* Title */
@@ -104,8 +101,23 @@ p {
 main {
     margin-top: 1rem;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    
 }
 
+main .counter-desing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* paragraph space */
+p {
+    padding: 2px;
+    margin: 0;
+}
 
 footer{
     margin: 2rem 0 1rem 0;
@@ -114,4 +126,36 @@ footer{
     font-weight: bold;
     color: var(--secondary-color);
     font-size: .8rem;
+}
+
+
+/* Counter */
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 25px 5px;
+}
+
+.counter {
+    font-size: 30px;
+    margin-top: 10px;
+}
+span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+[class*="2x"] {
+    color: var(--primary-color);
+  }
+
+
+@media(max-width:580px){
+    body{
+        flex-direction: column;
+    }
+
 }
